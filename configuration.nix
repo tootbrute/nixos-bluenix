@@ -132,6 +132,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     curl
@@ -145,7 +146,6 @@
     kdePackages.kdenlive #video editor
     mediainfo #tag info for video and audio files (kdenlive)
     audacity #audio editor
-    fastfetch
     git
     #libreoffice stuff
     libreoffice-fresh
