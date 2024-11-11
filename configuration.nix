@@ -154,6 +154,7 @@
     hunspell #dictionaries for libreoffice
     hunspellDicts.en_CA
     hunspellDicts.en_US
+    davinci-resolve
   ];
 
   # Fonts
